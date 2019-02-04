@@ -15,18 +15,27 @@ div {
   align-items: center;
 }
 .banner header .navbar {
+  border: none;
   position: fixed;
   width: 100%;
-  background: white;
-  opacity: 0,8;
+  background-color: white;
+  z-index: 20;
+  opacity: 1;
   top: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 12px 20px;
+  -webkit-box-shadow: 0 10px 12px -6px black;
+  -moz-box-shadow: 0 10px 12px -10px black;
+  box-shadow: 0 10px 12px -10px black;
 }
-.banner header .navbar nav {
-  width: 50%;
-  border: 1px solid green;
+.banner header .navbar .logo {
+  border: none;
+}
+.banner header .navbar .fa-align-justify {
+  color: red;
+  transform: scale(1.4);
 }
 .banner .headerText {
   margin-top: 35vh;
@@ -42,4 +51,100 @@ div {
 }
 .banner .headerText p {
   margin-top: 25px;
+}
+.services {
+  margin: 50px 0;
+}
+.services h2,
+.services p {
+  text-align: center;
+  line-height: 2.2em;
+}
+.services .grid {
+  display: flex;
+  flex-direction: column;
+}
+.services .grid .serviceItem {
+  width: 95%;
+  margin: 26px auto;
+  display: flex;
+}
+.services .grid .serviceItem .imgHolder {
+  width: initial;
+}
+.services .grid .serviceItem .serviceText {
+  width: 100%;
+}
+.services .grid .serviceItem .serviceText p {
+  text-align: left;
+  line-height: 1em;
+}
+section.tutorial {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+section.tutorial .tutorialText {
+  padding: 10px 10px;
+  background: #F9F9FF;
+}
+section.tutorial .tutorialVid {
+  padding: 200px 0 200px 0;
+  position: relative;
+  background: url(../img/video-bg.jpg) no-repeat center center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.tutorial .tutorialVid img {
+  margin: 0 auto;
+}
+section.support {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #222222;
+}
+section.support .supportImg {
+  width: 100%;
+  height: 200px;
+  background: url(../img/about-bg.jpg) no-repeat center center / cover;
+}
+section.support .supportText h2,
+section.support .supportText span {
+  color: white;
+}
+section.support .supportText p {
+  color: #707070;
+}
+section.callToAction {
+  background: url(../img/callaction-bg.jpg) center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+section.callToAction h2 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+section.callToAction p {
+  margin-bottom: 40px;
+}
+section.callToAction a {
+  text-transform: capitalize;
+  border-radius: 0;
+  background-color: #df003a;
+  color: #fff;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  padding: 12px 40px;
+}
+section.callToAction a:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
 }
