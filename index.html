@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Startup</title>
+    
 </head>
 <body>
     <div class="container">
         <header>
             <!-- .navbar has 100% width and has a z-index of +1 -->
             <div class="navbar">
-                <img src="" alt="Logo">
+                <div id="logo">
+		            <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+				</div>
                 <nav>
                     <a href="#">Link</a>
                     <a href="#">Link</a>
@@ -38,23 +41,28 @@
                 <p>Who are in extremely love with eco friendly system.</p>
                 <div class="grid">
                     <div class="serviceItem">
-                        <img src="" alt="">
-                        <div class="serviceText"></div>
+                        <img src="img/s1.png" alt="">
+                        <div class="serviceText">
                             <h3>Unlimited Colors</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
+                        </div>
+                        <!-- end of .serviceText -->
                     </div>
-                    <!-- end of .serviceText -->
+                    <!-- end of .serviceItem -->
+
 
                     <div class="serviceItem">
-                        <img src="" alt="">
-                        <div class="serviceText"></div>
+                        <img src="img/s3.png" alt="">
+                        <div class="serviceText">
                             <h3>Smart Security</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
+                        </div>
+                        <!-- end of .serviceText -->
                     </div>
-                    <!-- end of .serviceText -->
+                    <!-- end of .serviceItem -->
 
                     <div class="serviceItem">
-                        <img src="" alt="">
+						<img src="img/s2.png" alt="">
                         <div class="serviceText">
                             <h3>Endless Support</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
@@ -64,12 +72,12 @@
                     <!-- end of .serviceItem -->
 
                     <div class="serviceItem">
-                        <img src="" alt="">
+                        <img src="img/s4.png" alt="">
                         <div class="serviceText">
                             <h3>Smart Security</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
                         </div>
-                    <!-- end of .serviceText -->
+                        <!-- end of .serviceText -->
                     </div>
                     <!-- end of .serviceItem -->
 
@@ -85,14 +93,14 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Ut enim ad minim.</p>
                 </div>
                 <div class="tutorialVid">
-                    <img src="" alt="Play-Button">
+                    <img src="img/play-btn.png" alt="">
                 </div>
             </section>
             <!-- End of section.tutorial -->
 
             <section class="support">
                 <div class="supportImg">
-                    <img src="" alt="Office">
+							<img src="img/about-bg.jpg" alt="">
                 </div>
                 <div class="supportText">
                     <h4>24/7 SUPPORT SYSTEM</h4>
@@ -107,7 +115,7 @@
             <section class="callToAction">
                 <h2>Got Impressed to our features</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                <button class="cta">Request Free Demo</button>
+                <a class="button">Request Free Demo</a>
             </section>
             <!-- End of section.callToAction -->
 
@@ -186,14 +194,73 @@
             </section>
             <!-- End of section.pricing -->
 
+            <section class="testimonial">
+                <h2>Testimonial from our Clients</h2>
+                <p><span>Who are in extremely love with eco friendly system.</span></p>
+                <div class="testimonialCaroussel">
+                    <div class="testimonialCard">
+                        <img class="mx-auto" src="img/t1.png" alt="">
+                        <p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory</p>
+                        <p class="testName">Mark Alviro Wiens</p>
+                        <p class="testPos">CEO at Google</p>
+                    </div>
+                </div>
+            </section>
+            <!-- end of section.testimonial -->
 
+            <section class="blog">
+                <h2>Latest News from our Blog</h2>
+                <p><span>Who are in extremely love with eco friendly system.</span></p>
+                
+                <div class="blogpost">
+                    <img src="img/b1.jpg" alt="">
+                    <div class="tagRow">
+                        <div class="tag">Travel</div>
+                        <div class="tag">Life style</div>
+                    </div>
+                    <a href=""><h2>Portable latest Fashion for young women</h2></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    <date>31st January, 2018</date>
+                </div>
+                <!-- End of .blogpost -->
 
+                <div class="blogpost">
+                    <img src="img/b2.jpg" alt="">
+                    <div class="tagRow">
+                        <div class="tag">Travel</div>
+                        <div class="tag">Life style</div>
+                    </div>
+                    <a href=""><h2>Portable latest Fashion for young women</h2></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    <date>31st January, 2018</date>
+                </div>
+                <!-- End of .blogpost -->
+            </section>
+            <!-- End of section.blog -->
         </main>
     </div>
     <!-- End of .container -->
 
+    <footer>
+        <div class="productLinks">
+            <h6>Top Products</h6>
+                <ul class="footer-nav">
+                <li><a href="#">Managed Website</a></li>
+                <li><a href="#">Manage Reputation</a></li>
+                <li><a href="#">Power Tools</a></li>
+                <li><a href="#">Marketing Service</a></li>
+            </ul>
+        </div>
 
-
+        <!-- End of .productLinks -->
+        <div class="footer-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-dribbble"></i></a>
+            <a href="#"><i class="fa fa-behance"></i></a>
+        </div>
+        <!-- End of .footer-social -->
+    </footer>
 
 
     <script src="script.js"></script>
