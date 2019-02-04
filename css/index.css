@@ -4,9 +4,6 @@
   font-weight: 300;
   src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
 }
-div {
-  border: 1px solid red;
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -169,13 +166,13 @@ section.pricing .pricingHolder .priceCard:nth-child(1) .card .title .fa {
 section.pricing .pricingHolder .priceCard:nth-child(2) .card {
   background: linear-gradient(-45deg, #ffec61, #f321d7);
 }
-section.pricing .pricingHolder .priceCard .col-sm-4:nth-child(2) .card .title .fa {
+section.pricing .pricingHolder .priceCard:nth-child(2) .card .title .fa {
   background: linear-gradient(-45deg, #ffec61, #f321d7);
 }
 section.pricing .pricingHolder .priceCard:nth-child(3) .card {
   background: linear-gradient(-45deg, #24ff72, #9a4eff);
 }
-section.pricing .pricingHolder .priceCard :nth-child(3) .card .title .fa {
+section.pricing .pricingHolder .priceCard:nth-child(3) .card .title .fa {
   background: linear-gradient(-45deg, #24ff72, #9a4eff);
 }
 section.pricing .pricingHolder .priceCard .card {
@@ -183,26 +180,15 @@ section.pricing .pricingHolder .priceCard .card {
   width: 85%;
   height: auto;
   border-radius: 15px;
-  margin: 10px auto;
+  margin: 20px auto;
   padding: 40px 20px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
   border: none;
   overflow: hidden;
 }
-section.pricing .pricingHolder .priceCard .card:before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 40%;
-  background: rgba(255, 255, 255, 0.1);
-  z-index: 1;
-  transform: skewY(-5deg) scale(1.5);
-}
 section.pricing .pricingHolder .priceCard .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 section.pricing .pricingHolder .priceCard .card .title {
   border: none;
@@ -293,7 +279,7 @@ section.blog p {
   text-align: center;
 }
 section.blog .blogpost {
-  margin: 0 auto;
+  margin: 25px auto;
   width: 95%;
 }
 section.blog .blogpost .imgcontainer {
@@ -307,4 +293,38 @@ section.blog .blogpost .imgcontainer2 {
   width: 100%;
   height: 300px;
   background: url(../img/b2.jpg) center;
+}
+section.blog .blogpost .tagRow {
+  display: flex;
+}
+section.blog .blogpost .tagRow .tag {
+  margin: 10px 5px 10px 0;
+  border-radius: 1px;
+  color: white;
+  background: #df003a;
+  padding: 4px 6px;
+}
+section.blog .blogpost a {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+}
+section.blog .blogpost p {
+  text-align: left;
+  padding: 10px 0;
+}
+footer {
+  background: #222222;
+  color: white;
+}
+footer .productLinks ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer .footer-social a {
+  color: white;
+  background-color: white;
+}
+footer .footer-social a i {
+  color: #111;
 }

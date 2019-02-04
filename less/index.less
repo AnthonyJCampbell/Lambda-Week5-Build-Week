@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
-div {
-    border: 1px solid red;
-
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -190,13 +185,13 @@ section.pricing {
             &:nth-child(2) .card{
                 background: linear-gradient(-45deg, #ffec61, #f321d7);
             }
-            .col-sm-4:nth-child(2) .card .title .fa {
+            &:nth-child(2) .card .title .fa {
                 background: linear-gradient(-45deg, #ffec61, #f321d7);
             }
             &:nth-child(3) .card{
                 background: linear-gradient(-45deg, #24ff72, #9a4eff);
             }
-            :nth-child(3) .card .title .fa {
+            &:nth-child(3) .card .title .fa {
                 background: linear-gradient(-45deg, #24ff72, #9a4eff);        
             } 
             .card{
@@ -204,25 +199,14 @@ section.pricing {
                 width: 85%;
                 height: auto;
                 border-radius: 15px;
-                margin: 10px auto;
+                margin: 20px auto;
                 padding: 40px 20px;
                 box-shadow: 0 10px 15px rgba(0,0,0, .2);
                 transition: .5s;
                 border: none;
                 overflow: hidden;
-                &:before {
-                    content: '';
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 40%;
-                    background: rgba(255,255,255,.1);
-                    z-index: 1;
-                    transform: skewY(-5deg) scale(1.5);
-                }
                 &:hover{
-                    transform: scale(1.1);
+                    transform: scale(1.05);
                 }
                 
                 .title{
@@ -320,7 +304,7 @@ section.blog {
         text-align: center;
     }
     .blogpost {
-        margin: 0 auto;
+        margin: 25px auto;
         width: 95%;
 
         .imgcontainer {
@@ -334,6 +318,50 @@ section.blog {
             width: 100%;
             height: 300px;
             background: url(../img/b2.jpg) center;
+        }
+        .tagRow {
+            display: flex;
+            .tag {
+                margin: 10px 5px 10px 0;
+                border-radius: 1px;
+                color: white;
+                background: #df003a;
+                padding: 4px 6px;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            margin-bottom: 10px;
+        }
+        p {
+            text-align: left;
+            padding: 10px 0;
+        }
+    }
+}
+
+footer {
+    background: #222222;
+    color: white;
+    .productLinks {
+        ul {
+            li {
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+    .footer-social {
+        a {
+            color: white;
+            background-color: white;
+            i {
+                color: #111;
+
+            }
         }
     }
 }
