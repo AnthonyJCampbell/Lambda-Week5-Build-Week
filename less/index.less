@@ -7,15 +7,50 @@ div {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
 
-header {
+
+
+
+.banner {
     height: 100vh;
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        nav {
-            width: 50%;
+    width: 100%;
+    background: url(../img/header-bg.jpg) center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    header {
+        
+
+        .navbar {
+            position: fixed;
+            width: 100%;
+            background: white;
+            opacity: 0,8;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 20px;
+            nav {
+                width: 50%;
+                border: 1px solid green;
+            }
+        }
+    
+    }
+    .headerText {
+        margin-top: 35vh;
+        text-align: center;
+        width: 95%;
+        margin: 0 auto;
+        transform: translateY(-50px);
+        h1 {
+            margin: 0 auto;
+            width: 80%;
+            font-size: 48px;
+        }
+        p {
+            margin-top: 25px;
         }
     }
 }
