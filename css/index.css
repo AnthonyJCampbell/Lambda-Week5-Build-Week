@@ -318,17 +318,17 @@ h6 {
 }
 .banner header .navbar nav .sidenav .closebtn {
   position: absolute;
-  top: 0;
-  right: -200px;
+  top: 10px;
+  right: -280px;
   font-size: 36px;
   margin-left: 50px;
 }
 .banner header .navbar nav .sidenav a {
   color: #fff;
-  font-size: 13px;
+  font-size: 18px;
   text-transform: uppercase;
   overflow: hidden;
-  padding: 10px 22px 10px 15px;
+  padding: 10px 22px 10px 25px;
   position: relative;
   text-decoration: none;
   width: 100%;
