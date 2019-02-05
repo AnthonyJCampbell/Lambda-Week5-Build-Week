@@ -5,20 +5,37 @@
         line-height: 2.2em;
     }
     .grid {
+        width: 100%;
+        max-width: 1280px;
+        margin: 30px auto 0 auto;
         display: flex;
         flex-direction: column;
+        @media (min-width: 1024px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
         .serviceItem {
             width: 95%;
             margin: 26px auto;
             display: flex;
+            @media (min-width: 1024px) {
+                width: 45%;
+            }
             .imgHolder {
                 width: initial;
             }
             .serviceText {
-                width: 100%;
+                width: 600%;
+                padding-left: 8px;
+                margin: 0 auto;
+                h3 {
+                    margin-bottom: 8px;
+                }
                 p {
                     text-align: left;
-                    line-height: 1em;
+                    font-size: 14px;
+                    line-height: 2em;
                 }
             }
         }

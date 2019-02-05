@@ -298,11 +298,18 @@ h6 {
   border: none;
 }
 .banner header .navbar .navHolder nav .navItem {
+  padding: 0 8px 0px 8px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  outline: none;
   display: none;
 }
 @media (min-width: 1024px) {
   .banner header .navbar .navHolder nav .navItem {
-    display: inline;
+    display: inline-block;
   }
 }
 .banner header .navbar .navHolder nav .fa-align-justify {
@@ -387,23 +394,44 @@ h6 {
   line-height: 2.2em;
 }
 .services .grid {
+  width: 100%;
+  max-width: 1280px;
+  margin: 30px auto 0 auto;
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .services .grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 .services .grid .serviceItem {
   width: 95%;
   margin: 26px auto;
   display: flex;
 }
+@media (min-width: 1024px) {
+  .services .grid .serviceItem {
+    width: 45%;
+  }
+}
 .services .grid .serviceItem .imgHolder {
   width: initial;
 }
 .services .grid .serviceItem .serviceText {
-  width: 100%;
+  width: 600%;
+  padding-left: 8px;
+  margin: 0 auto;
+}
+.services .grid .serviceItem .serviceText h3 {
+  margin-bottom: 8px;
 }
 .services .grid .serviceItem .serviceText p {
   text-align: left;
-  line-height: 1em;
+  font-size: 14px;
+  line-height: 2em;
 }
 section.tutorial {
   width: 100%;

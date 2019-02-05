@@ -30,4 +30,8 @@ function openNav() {
         document.querySelector('#open').style.display = 'none';
     }
   }))
-  
+
+  // Add box shadow on navbar when event 'scroll' fires.
+  // As soon as it fires, set a timer for 0.3 sec. After that time has elapsed, add the box-shadow
+  // Have a counter initialized to 0. When 'scroll' fires, add 1;
+  // Make the function dependent on if (counter < 1);
