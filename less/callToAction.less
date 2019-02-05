@@ -1,35 +1,54 @@
 section.callToAction {
+
+    margin: 0 0 32px 0;
+    background-color: #F9F9FF;
     background: url(../img/callaction-bg.jpg) center;
     background-size: cover;
     color: white;
     text-align: center;
     padding: 80px 20px;
-    h2 {
-        color: white;
-        font-size: 36px;
-        margin: 10px 0;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: skew(0deg, -2deg) translatey(-18px);
+    @media (min-width: 1024px) {
+        margin: 32px 0;        
+        min-height: 400px;
+        transform: skew(0deg, 0deg);
     }
-    p {
-        margin-bottom: 40px;
-    }
-    a {
-        
-        text-transform: capitalize;
-        border-radius: 0;
-        background-color: #df003a;
-        color: #fff;
-        border: 1px solid transparent;
-        -webkit-transition: all 0.3s ease 0s;
-        -moz-transition: all 0.3s ease 0s;
-        -o-transition: all 0.3s ease 0s;
-        transition: all 0.3s ease 0s;
-        padding: 12px 40px;
-        
-        &:hover {
-            background-color: transparent;
+    .textContainer {
+        transform: skew(0deg, 2deg);
+        max-width: 720px;
+        @media (min-width: 1024px) {
+            transform: skew(0deg, 0deg);
+        }
+        h2 {
+            color: white;
+            font-size: 36px;
+            margin: 10px 0;
+        }
+        p {
+            margin-bottom: 40px;
+        }
+        a {
+            
+            text-transform: capitalize;
+            border-radius: 0;
+            background-color: #df003a;
             color: #fff;
-            border: 1px solid #fff;
+            border: 1px solid transparent;
+            -webkit-transition: all 0.3s ease 0s;
+            -moz-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+            padding: 12px 40px;
+            
+            &:hover {
+                background-color: transparent;
+                color: #fff;
+                border: 1px solid #fff;
+            }
         }
     }
-    
 }
