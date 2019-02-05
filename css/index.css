@@ -281,23 +281,47 @@ h6 {
   z-index: 20;
   opacity: 1;
   top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 12px 20px;
   -webkit-box-shadow: 0 10px 12px -6px black;
   -moz-box-shadow: 0 10px 12px -10px black;
   box-shadow: 0 10px 12px -10px black;
 }
-.banner header .navbar .logo {
+.banner header .navbar .navHolder {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner header .navbar .navHolder .logo {
   border: none;
 }
-.banner header .navbar nav .fa-align-justify {
+.banner header .navbar .navHolder nav .navItem {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .banner header .navbar .navHolder nav .navItem {
+    display: inline;
+  }
+}
+.banner header .navbar .navHolder nav .fa-align-justify {
   color: red;
   transform: scale(1.6);
   cursor: pointer;
 }
-.banner header .navbar nav .sidenav {
+@media (min-width: 1024px) {
+  .banner header .navbar .navHolder nav .fa-align-justify {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .banner header .navbar .navHolder nav #open,
+  .banner header .navbar .navHolder nav #close {
+    display: none;
+  }
+}
+.banner header .navbar .navHolder nav .sidenav {
   height: 100%;
   /* 100% Full-height */
   width: 0;
@@ -316,14 +340,14 @@ h6 {
   z-index: 998;
   background: rgba(0, 0, 0, 0.9);
 }
-.banner header .navbar nav .sidenav .closebtn {
+.banner header .navbar .navHolder nav .sidenav .closebtn {
   position: absolute;
   top: 10px;
   right: -280px;
   font-size: 36px;
   margin-left: 50px;
 }
-.banner header .navbar nav .sidenav a {
+.banner header .navbar .navHolder nav .sidenav a {
   color: #fff;
   font-size: 18px;
   text-transform: uppercase;
@@ -336,7 +360,7 @@ h6 {
   outline: none;
   font-weight: 700;
 }
-.banner header .navbar nav .sidenav a:hover {
+.banner header .navbar .navHolder nav .sidenav a:hover {
   color: #f1f1f1;
 }
 .banner .headerText {

@@ -18,24 +18,31 @@
         <main>    
             <section class="banner">
                 <header>
-                    <!-- .navbar has 100% width and has a z-index of +1 -->
                     <div class="navbar">
-                        <div class="logo">
-                            <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+                        <div class="navHolder">
+                            <div class="logo">
+                                <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+                            </div>
+                            <nav>
+                                <a class="navItem" href="#">HOME</a>
+                                <a class="navItem" href="#">WE OFFER</a>
+                                <a class="navItem" href="#">ABOUT</a>
+                                <a class="navItem" href="#">PROJECT</a>
+                                <a class="navItem" href="#">PRICE</a>
+                                <a class="navItem" href="#">PAGES</a>
+                                <i class="fas fa-align-justify" id="open" onclick="openNav()"></i>
+                                <i class="fas fa-align-justify" style="display:none;" id="close" onclick="closeNav()"></i>
+                                <div id="mySidenav" class="sidenav">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                    <a href="#">HOME</a>
+                                    <a href="#">WE OFFER</a>
+                                    <a href="#">ABOUT</a>
+                                    <a href="#">PROJECT</a>
+                                    <a href="#">PRICE</a>
+                                    <a href="#">PAGES</a>
+                                </div>                                    
+                            </nav>
                         </div>
-                        <nav>
-                            <i class="fas fa-align-justify" id="open" onclick="openNav()"></i>
-                            <i class="fas fa-align-justify" style="display:none;" id="close" onclick="closeNav()"></i>
-                            <div id="mySidenav" class="sidenav">
-                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                <a href="#">HOME</a>
-                                <a href="#">WE OFFER</a>
-                                <a href="#">ABOUT</a>
-                                <a href="#">PROJECT</a>
-                                <a href="#">PRICE</a>
-                                <a href="#">PAGES</a>
-                            </div>                                    
-                        </nav>
                     </div>
                     <!-- End of .navbar -->
                 </header>  
