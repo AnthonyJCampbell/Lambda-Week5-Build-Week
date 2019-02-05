@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import "general.less";
+@import "reset.less";
 
 * {
     box-sizing: border-box;
@@ -39,14 +41,40 @@
                 border: none;
             }
 
-            .fa-align-justify {
-                color: red;
-                transform: scale(1.4)
+            nav {
+                .fa-align-justify {
+                    color: red;
+                    transform: scale(1.4);
+                    cursor: pointer;
+                }
+                .menu {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    padding-top: 18px;
+                    bottom: 0;
+                    z-index: 998;
+                    background: rgba(0,0,0,.9);
+                    width: 260px;
+                    overflow-y: auto;
+                    transition: .4s;
+                    display: flex;
+                    flex-direction: column;
+                    a {
+                        color: #fff;
+                        font-size: 13px;
+                        text-transform: uppercase;
+                        overflow: hidden;
+                        padding: 10px 22px 10px 15px;
+                        position: relative;
+                        text-decoration: none;
+                        width: 100%;
+                        display: block;
+                        outline: none;
+                        font-weight: 700;
+                    }
+                }
             }
-            // nav {
-            //     width: 50%;
-            //     border: 1px solid green;
-            // }
         }
     
     }
