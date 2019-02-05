@@ -297,33 +297,33 @@ h6 {
   transform: scale(1.4);
   cursor: pointer;
 }
-.banner header .navbar nav .filter {
+.banner header .navbar nav .sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
   position: fixed;
+  /* Stay in place */
   top: 0;
+  /* Stay at the top */
   left: 0;
-  right: 0;
-  bottom: 0;
-  width: 500px;
-  z-index: 995;
-  background: rgba(0, 0, 0, 0.7);
-  overflow-y: auto;
-  transition: 0.4s;
-}
-.banner header .navbar nav .filter .menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding-top: 18px;
-  bottom: 0;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
   z-index: 998;
   background: rgba(0, 0, 0, 0.9);
-  width: 260px;
-  overflow-y: auto;
-  transition: 0.4s;
-  display: flex;
-  flex-direction: column;
 }
-.banner header .navbar nav .filter .menu a {
+.banner header .navbar nav .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: -200px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.banner header .navbar nav .sidenav a {
   color: #fff;
   font-size: 13px;
   text-transform: uppercase;
@@ -335,6 +335,9 @@ h6 {
   display: block;
   outline: none;
   font-weight: 700;
+}
+.banner header .navbar nav .sidenav a:hover {
+  color: #f1f1f1;
 }
 .banner .headerText {
   margin-top: 35vh;
