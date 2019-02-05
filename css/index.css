@@ -132,6 +132,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   color: #777777;
   font-family: "Poppins", sans-serif;
@@ -260,11 +265,6 @@ h5,
 h6 {
   line-height: 1.5em;
 }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 .banner {
   height: 100vh;
   width: 100%;
@@ -294,7 +294,7 @@ h6 {
 }
 .banner header .navbar nav .fa-align-justify {
   color: red;
-  transform: scale(1.4);
+  transform: scale(1.6);
   cursor: pointer;
 }
 .banner header .navbar nav .sidenav {
