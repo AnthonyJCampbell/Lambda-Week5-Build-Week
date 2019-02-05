@@ -452,9 +452,41 @@ section.callToAction a:hover {
 }
 section.pricing {
   background: #F9F9FF;
+  padding-top: 30px;
+}
+section.pricing h2,
+section.pricing p {
+  line-height: 3em;
+  text-align: center;
 }
 section.pricing .pricingHolder {
-  margin: 40px 0;
+  padding: 40px 0;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+@media (min-width: 678px) {
+  section.pricing .pricingHolder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+section.pricing .pricingHolder .priceCard {
+  width: 70%;
+  margin: 0 auto;
+}
+@media (min-width: 678px) {
+  section.pricing .pricingHolder .priceCard {
+    width: 45%;
+  }
+}
+@media (min-width: 1024px) {
+  section.pricing .pricingHolder .priceCard {
+    width: 32%;
+  }
+  section.pricing .pricingHolder .priceCard:nth-child(2) .card {
+    transform: translateY(-25px);
+  }
 }
 section.pricing .pricingHolder .priceCard:nth-child(1) .card {
   background: linear-gradient(-45deg, #f403d1, #64b5f6);
@@ -558,11 +590,31 @@ section.testimonial {
   background: #F9F9FF;
 }
 section.testimonial .testimonialCaroussel {
-  margin: 40px 0;
+  margin: 20px auto 40px auto;
+  padding-bottom: 30px;
+  width: 100%;
+  max-width: 1120px;
+}
+@media (min-width: 678px) {
+  section.testimonial .testimonialCaroussel {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+  }
 }
 section.testimonial .testimonialCaroussel .testimonialCard {
   background: white;
   padding: 25px;
+}
+@media (min-width: 678px) {
+  section.testimonial .testimonialCaroussel .testimonialCard {
+    width: 45%;
+  }
+}
+@media (min-width: 1024px) {
+  section.testimonial .testimonialCaroussel .testimonialCard {
+    width: 28%;
+  }
 }
 section.testimonial .testimonialCaroussel .testimonialCard img {
   margin-bottom: 25px;
@@ -572,6 +624,22 @@ section.testimonial .testimonialCaroussel .testimonialCard .testText {
 }
 section.testimonial .testimonialCaroussel .testimonialCard .testName {
   font-weight: 700;
+}
+section.testimonial .testimonialCaroussel #second {
+  display: none;
+}
+@media (min-width: 678px) {
+  section.testimonial .testimonialCaroussel #second {
+    display: inline;
+  }
+}
+section.testimonial .testimonialCaroussel #third {
+  display: none;
+}
+@media (min-width: 1024px) {
+  section.testimonial .testimonialCaroussel #third {
+    display: inline;
+  }
 }
 section.blog h2,
 section.blog p {
@@ -585,13 +653,13 @@ section.blog .blogpost .imgcontainer {
   border-radius: 5px;
   width: 100%;
   height: 300px;
-  background: url(../img/b1.jpg) center;
+  background: url(../img/b1.jpg) center no-repeat;
 }
 section.blog .blogpost .imgcontainer2 {
   border-radius: 5px;
   width: 100%;
   height: 300px;
-  background: url(../img/b2.jpg) center;
+  background: url(../img/b2.jpg) center no-repeat;
 }
 section.blog .blogpost .tagRow {
   display: flex;

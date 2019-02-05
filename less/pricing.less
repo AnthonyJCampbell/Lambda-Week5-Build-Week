@@ -1,9 +1,31 @@
 section.pricing {
     background: #F9F9FF;
-    
+    padding-top: 30px;
+    h2, p{
+        line-height: 3em;
+        text-align: center;
+    }
     .pricingHolder {
-        margin: 40px 0;
+        padding: 40px 0;
+        max-width: 1120px;
+        margin: 0 auto;
+        @media (min-width: 678px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         .priceCard{
+            width: 70%;
+            margin: 0 auto;
+            @media (min-width: 678px) {
+                width: 45%;
+            }
+            @media (min-width: 1024px) {
+                width: 32%;
+                &:nth-child(2) .card{
+                    transform: translateY(-25px);
+                }
+            }
             &:nth-child(1) .card {
                 background: linear-gradient(-45deg, #f403d1, #64b5f6);
             }
@@ -36,7 +58,6 @@ section.pricing {
                 &:hover{
                     transform: scale(1.05);
                 }
-                
                 .title{
                     border: none;
                     .fa {

@@ -2,8 +2,22 @@ section.testimonial {
     text-align: center;
     background: #F9F9FF;
     .testimonialCaroussel {
-        margin: 40px 0;
+        margin: 20px auto 40px auto;
+        padding-bottom: 30px;
+        width: 100%;
+        max-width: 1120px;
+        @media (min-width: 678px) {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 30px;
+        }
         .testimonialCard {
+            @media (min-width: 678px) {
+                width: 45%;
+            }
+            @media (min-width: 1024px) {
+                width: 28%;
+            }
             background: white;
             padding: 25px;
             img {
@@ -14,6 +28,18 @@ section.testimonial {
             }
             .testName {
                 font-weight: 700;
+            }
+        }
+        #second {
+            display: none;
+            @media (min-width: 678px) {
+                display: inline;
+            }
+        }
+        #third {
+            display: none;
+            @media (min-width: 1024px) {
+                display: inline;
             }
         }
     }
