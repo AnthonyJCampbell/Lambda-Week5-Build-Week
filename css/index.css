@@ -641,21 +641,44 @@ section.testimonial .testimonialCaroussel #third {
     display: inline;
   }
 }
+section.blog {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+@media (min-width: 1024px) {
+  section.blog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 section.blog h2,
 section.blog p {
+  width: 90%;
   text-align: center;
 }
 section.blog .blogpost {
   margin: 25px auto;
-  width: 95%;
+  width: 90%;
+}
+@media (min-width: 1024px) {
+  section.blog .blogpost {
+    width: 45%;
+    margin: 25px 25px;
+  }
 }
 section.blog .blogpost .imgcontainer {
   border-radius: 5px;
+  margin: 15px 0;
   width: 100%;
   height: 300px;
   background: url(../img/b1.jpg) center no-repeat;
 }
 section.blog .blogpost .imgcontainer2 {
+  margin: 15px 0;
   border-radius: 5px;
   width: 100%;
   height: 300px;
