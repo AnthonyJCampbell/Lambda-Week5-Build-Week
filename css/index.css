@@ -512,12 +512,13 @@ section.support .supportImg {
 }
 section.support .supportText {
   padding: 20px 0;
-  margin: 0 15px 0 25px;
-  width: 95%;
+  margin: 0 auto;
+  width: 90%;
 }
 @media (min-width: 1024px) {
   section.support .supportText {
     width: 30%;
+    margin: 0 15px 0 25px;
   }
 }
 section.support .supportText h4 {
@@ -907,7 +908,6 @@ footer .footerHolder .upperLayer .productLinks ul li a:hover {
 footer .footerHolder .upperLayer .newsletter {
   width: 100%;
   max-width: 500px;
-  min-width: 400px;
   margin: 0 0 0 40px;
 }
 @media (min-width: 1024px) {
@@ -935,12 +935,17 @@ footer .footerHolder .upperLayer .newsletter input {
   font-weight: 500;
   border-radius: 20px;
   color: #777;
-  padding-left: 20px !important;
-  width: 100%;
-  overflow: visible;
+  width: 80%;
+  max-width: 300px;
+  overflow: hidden;
   -webkit-rtl-ordering: logical;
   cursor: text;
   padding: 1px;
+}
+@media (min-width: 1024px) {
+  footer .footerHolder .upperLayer .newsletter input {
+    padding-left: 20px !important;
+  }
 }
 footer .footerHolder .upperLayer .newsletter button {
   margin-top: 20px;
