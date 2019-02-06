@@ -747,6 +747,9 @@ section.testimonial .testimonialCaroussel .testimonialCard {
   background: white;
   padding: 25px;
 }
+section.testimonial .testimonialCaroussel .testimonialCard:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
 @media (min-width: 678px) {
   section.testimonial .testimonialCaroussel .testimonialCard {
     width: 45%;
