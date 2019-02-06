@@ -8,11 +8,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    
     <link rel="stylesheet" href="css/linearicons.css">
-
-
-
     <link href="css/index.css" rel="stylesheet">
 
     
@@ -22,33 +18,44 @@
         <main>    
             <section class="banner">
                 <header>
-                    <!-- .navbar has 100% width and has a z-index of +1 -->
                     <div class="navbar">
-                        <div class="logo">
-                            <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+                        <div class="navHolder">
+                            <div class="logo">
+                                <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+                            </div>
+                            <nav>
+                                <a class="navItem" href="#">HOME</a>
+                                <a class="navItem" href="#services">WE OFFER</a>
+                                <a class="navItem" href="#about">ABOUT</a>
+                                <a class="navItem" href="#support">PROJECT</a>
+                                <a class="navItem" href="#pricing">PRICE</a>
+                                
+                                <i class="fas fa-align-justify" id="open" onclick="openNav()"></i>
+                                <i class="fas fa-align-justify" style="display:none;" id="close" onclick="closeNav()"></i>
+                                
+                                <div id="mySidenav" class="sidenav">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                    <a href="#">HOME</a>
+                                    <a href="#services">WE OFFER</a>
+                                    <a href="#about">ABOUT</a>
+                                    <a href="#support">PROJECT</a>
+                                    <a href="#pricing">PRICE</a>
+                                </div>                                    
+                            </nav>
                         </div>
-                        <nav>
-                            <i class="fas fa-align-justify"></i>
-                            <!-- <a href="#">Link</a>
-                            <a href="#">Link</a>
-                            <a href="#">Link</a>
-                            <a href="#">Link</a>
-                            <a href="#">Link</a>
-                            <a href="#">Link</a> -->
-                        </nav>
                     </div>
                     <!-- End of .navbar -->
                 </header>  
 
                 <div class="headerText">
-                    <h1>All You Want Is Here</h1>
+                    <h1>All you want is here</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
                 </div>
                 <!-- Could potentially add an animated mouse icon to beckon the user to scroll further down. -->
             </section>
             <!-- End of section.banner -->
         
-            <section class="services">
+            <section class="services" id="services">
                 <h2>Our Offered Services</h2>
                 <p>Who are in extremely love with eco friendly system.</p>
                 <div class="grid">
@@ -66,7 +73,9 @@
 
 
                     <div class="serviceItem">
-                        <img src="img/s3.png" alt="">
+                        <div class="imgHolder">
+                            <img src="img/s3.png" alt="">
+                        </div>
                         <div class="serviceText">
                             <h3>Smart Security</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
@@ -76,7 +85,9 @@
                     <!-- end of .serviceItem -->
 
                     <div class="serviceItem">
-						<img src="img/s2.png" alt="">
+                        <div class="imgHolder">
+                            <img src="img/s2.png" alt="">
+                        </div>
                         <div class="serviceText">
                             <h3>Endless Support</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
@@ -86,7 +97,9 @@
                     <!-- end of .serviceItem -->
 
                     <div class="serviceItem">
-                        <img src="img/s4.png" alt="">
+                        <div class="imgHolder">
+                            <img src="img/s4.png" alt="">
+                        </div>
                         <div class="serviceText">
                             <h3>Smart Security</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation.</p>
@@ -99,7 +112,7 @@
             </section>
             <!-- End of section.services -->
 
-            <section class="tutorial">
+            <section class="tutorial" id="about">
                 <div class="tutorialText">
                     <h4>TUTORIAL FOR BEGINNERS</h4>
                     <h2>Watch tutorial<br>Video of SaaS to start</h2>
@@ -112,13 +125,13 @@
             </section>
             <!-- End of section.tutorial -->
 
-            <section class="support">
+            <section class="support" id="support">
                 <div class="supportImg">
 
                 </div>
                 <div class="supportText">
                     <h4>24/7 SUPPORT SYSTEM</h4>
-                    <h2>A Handy support<br>System for the Softwarre</h2>
+                    <h2>A Handy support<br>System for the Software</h2>
                     <p><span>We are here to listen from you deliver exellence</span></p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Ut enim ad minim.</p>
                 </div>
@@ -127,13 +140,16 @@
             <!-- End of section.support -->
 
             <section class="callToAction">
-                <h2>Got Impressed to our features</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                <a class="button">Request Free Demo</a>
+                <div class="textContainer">
+                    <h2>Got Impressed to our features</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                    <a class="button">Request Free Demo</a>
+                </div>
+                
             </section>
             <!-- End of section.callToAction -->
 
-            <section class="pricing">
+            <section class="pricing" id="pricing">
                 <h2>Choose the Perfect Plan for you</h2>
                 <p>Who are in extremely love with eco friendly system.</p>
                 <div class="pricingHolder">
@@ -212,8 +228,20 @@
                 <h2>Testimonial from our Clients</h2>
                 <p><span>Who are in extremely love with eco friendly system.</span></p>
                 <div class="testimonialCaroussel">
-                    <div class="testimonialCard">
+                    <div class="testimonialCard" id="first">
                         <img class="mx-auto" src="img/t1.png" alt="">
+                        <p class="testText">Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory</p>
+                        <p class="testName">Mark Alviro Wiens</p>
+                        <p class="testPos">CEO at Google</p>
+                    </div>
+                    <div class="testimonialCard" id="second">
+                        <img class="mx-auto" src="img/t2.png" alt="">
+                        <p class="testText">Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory</p>
+                        <p class="testName">Mark Alviro Wiens</p>
+                        <p class="testPos">CEO at Google</p>
+                    </div>
+                    <div class="testimonialCard" id="third">
+                        <img class="mx-auto" src="img/t3.png" alt="">
                         <p class="testText">Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory</p>
                         <p class="testName">Mark Alviro Wiens</p>
                         <p class="testPos">CEO at Google</p>

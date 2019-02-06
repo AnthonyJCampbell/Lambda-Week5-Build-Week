@@ -1,0 +1,89 @@
+section.tutorial {
+    padding: 25px 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #F9F9FF;
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .tutorialText {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 840px;
+        padding: 20px 25px;
+        background: #F9F9FF;
+
+        @media (min-width: 1024px) {
+            width: 50%;
+        }
+        h4 {
+            margin-bottom: 14px;
+            font-size: 1.6em;
+            line-height: 2.4em;
+            color: #df003a;
+            font-weight: 300;
+        }
+        h2, p {
+            margin: 12px 0;
+        }
+    }
+    .tutorialVid {
+        width: 100%;
+        padding: 200px 0 200px 0;
+        position: relative;
+        background: url(../img/video-bg.jpg) no-repeat center center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (min-width: 1024px) {
+            width: 50%;
+        }
+        img {
+            margin: 0 auto;
+        }
+    }
+}
+section.support {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #222222;
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        align-items: center;
+    }
+    .supportImg {
+        width: 100%;
+        min-height: 400px;
+        height: 100%;
+        background: url(../img/about-bg.jpg) no-repeat center center/cover;
+        @media (min-width: 1024px) {
+            width: 70%;
+        }
+    }
+    .supportText {
+        padding: 20px 0;
+        margin: 0 15px 0 25px;
+        width: 95%;
+        @media (min-width: 1024px) {
+            width: 30%;
+        }
+        h4 {
+            font-size: 1.6em;
+            line-height: 2.4em;
+            color: #df003a;
+            font-weight: 300;
+            margin-bottom: 14px;
+        }
+        h2, p, span {
+            margin: 12px 0;
+            color: white;
+        }
+        p {
+            color: #707070;
+        }
+    }
+}
