@@ -484,6 +484,7 @@ section.tutorial .tutorialVid {
   }
 }
 section.tutorial .tutorialVid img {
+  cursor: pointer;
   margin: 0 auto;
 }
 section.support {
@@ -846,15 +847,115 @@ section.blog .blogpost p {
 footer {
   background: #222222;
   color: white;
+  width: 100%;
 }
-footer .productLinks ul li a {
+footer .footerHolder {
+  padding: 40px 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1140px;
+}
+footer .footerHolder .upperLayer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+footer .footerHolder .upperLayer .productLinks {
+  margin: 0 0 25px;
+}
+footer .footerHolder .upperLayer .productLinks h6 {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 24px;
+}
+footer .footerHolder .upperLayer .productLinks ul li {
+  margin: 8px 0;
+}
+footer .footerHolder .upperLayer .productLinks ul li a {
+  font-size: 1.2em;
+  font-weight: 700;
   text-decoration: none;
   color: white;
 }
-footer .footer-social a {
-  color: white;
-  background-color: white;
+footer .footerHolder .upperLayer .productLinks ul li a:hover {
+  border-bottom: 3px solid #df003a;
 }
-footer .footer-social a i {
-  color: #111;
+footer .footerHolder .upperLayer .newsletter {
+  width: 100%;
+  max-width: 500px;
+  min-width: 400px;
+}
+footer .footerHolder .upperLayer .newsletter h6 {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 24px;
+}
+footer .footerHolder .upperLayer .newsletter p {
+  margin-bottom: 1em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+}
+footer .footerHolder .upperLayer .newsletter input {
+  line-height: 38px;
+  border: none;
+  background: #fff;
+  font-weight: 500;
+  border-radius: 20px;
+  color: #777;
+  padding-left: 20px !important;
+  width: 100%;
+  overflow: visible;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  padding: 1px;
+}
+footer .footerHolder .upperLayer .newsletter button {
+  margin-top: 20px;
+  margin-left: 10px;
+  background-color: #df003a;
+  text-align: center;
+  line-height: 42px!important;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  font: 400 11px system-ui;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #222;
+}
+footer .footerHolder .upperLayer .newsletter button:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+  border: 2px solid white;
+}
+footer .footerHolder .upperLayer .newsletter button span {
+  font-size: 1.6em;
+}
+footer .footerHolder .bottomLayer {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footerHolder .bottomLayer .copyright span,
+footer .footerHolder .bottomLayer .copyright i {
+  color: #df003a;
+}
+footer .footerHolder .bottomLayer .copyright span {
+  border-bottom: 1px solid white;
+}
+footer .footerHolder .bottomLayer .footer-social a i {
+  font-size: 2em;
+  color: #FFF;
+}
+footer .footerHolder .bottomLayer .footer-social a i:hover {
+  color: #df003a;
 }
