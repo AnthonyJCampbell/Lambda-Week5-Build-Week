@@ -6,12 +6,16 @@ footer {
         padding: 40px 0;
         margin: 0 auto;
         width: 100%;
-        max-width: 1140px;
+        max-width: 1024px;
         .upperLayer{
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             margin-bottom: 24px;
             .productLinks {
+                @media (max-width: 1024px) {
+                    margin: 0 0 25px 40px;
+                }
                 margin: 0 0 25px;
                 h6 {
                     font-size: 1.6em;
@@ -39,7 +43,10 @@ footer {
                 width: 100%;
                 max-width: 500px;
                 min-width: 400px;
-
+                margin: 0 0 0 40px;
+                @media (min-width: 1024px) {
+                    margin: 0px;
+                }
                 h6 {
                     font-size: 1.6em;
                     font-weight: 700;
@@ -100,7 +107,16 @@ footer {
         .bottomLayer {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             .copyright {
+                order: 2;
+                margin: 0 0 0 40px;
+                width: 100%;
+                @media (min-width: 1024px) {
+                    margin: 0;
+                    width: 70%;
+                    order: -1;
+                }
                 span, i {
                     color: #df003a;
                 }
@@ -109,9 +125,14 @@ footer {
                 }
             }
             .footer-social {
+                margin: 20px 0 20px 40px; 
+                @media (min-width: 1024px) {
+                    margin: 0;
+                }
                 a {
                     
                     i {
+                        margin-left: 4px;
                         font-size: 2em;
                         color: #FFF;
                         &:hover {

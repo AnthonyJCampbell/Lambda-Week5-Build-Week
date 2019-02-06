@@ -816,13 +816,13 @@ section.blog .blogpost {
 }
 section.blog .blogpost .imgcontainer {
   border-radius: 5px;
-  margin: 15px 0;
+  margin: 15px 0 10px;
   width: 100%;
   height: 300px;
   background: url(../img/b1.jpg) center no-repeat;
 }
 section.blog .blogpost .imgcontainer2 {
-  margin: 15px 0;
+  margin: 15px 0 10px;
   border-radius: 5px;
   width: 100%;
   height: 300px;
@@ -832,11 +832,18 @@ section.blog .blogpost .tagRow {
   display: flex;
 }
 section.blog .blogpost .tagRow .tag {
-  margin: 10px 5px 10px 0;
+  margin: 5px 5px 15px 0;
   border-radius: 1px;
   color: white;
   background: #df003a;
   padding: 4px 6px;
+  border: 2px solid white;
+}
+section.blog .blogpost .tagRow .tag:hover {
+  transition: all 0.3s ease 0s;
+  background: white;
+  color: #df003a;
+  border: 2px solid #df003a;
 }
 section.blog .blogpost a {
   text-decoration: none;
@@ -847,6 +854,13 @@ section.blog .blogpost p {
   text-align: left;
   padding: 10px 0;
 }
+section.blog .blogpost p a {
+  font-size: 1.2em;
+  color: #df003a;
+}
+section.blog .blogpost .date {
+  text-decoration: underline;
+}
 footer {
   background: #222222;
   color: white;
@@ -856,15 +870,21 @@ footer .footerHolder {
   padding: 40px 0;
   margin: 0 auto;
   width: 100%;
-  max-width: 1140px;
+  max-width: 1024px;
 }
 footer .footerHolder .upperLayer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 24px;
 }
 footer .footerHolder .upperLayer .productLinks {
   margin: 0 0 25px;
+}
+@media (max-width: 1024px) {
+  footer .footerHolder .upperLayer .productLinks {
+    margin: 0 0 25px 40px;
+  }
 }
 footer .footerHolder .upperLayer .productLinks h6 {
   font-size: 1.6em;
@@ -888,6 +908,12 @@ footer .footerHolder .upperLayer .newsletter {
   width: 100%;
   max-width: 500px;
   min-width: 400px;
+  margin: 0 0 0 40px;
+}
+@media (min-width: 1024px) {
+  footer .footerHolder .upperLayer .newsletter {
+    margin: 0px;
+  }
 }
 footer .footerHolder .upperLayer .newsletter h6 {
   font-size: 1.6em;
@@ -947,6 +973,19 @@ footer .footerHolder .upperLayer .newsletter button span {
 footer .footerHolder .bottomLayer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .footerHolder .bottomLayer .copyright {
+  order: 2;
+  margin: 0 0 0 40px;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  footer .footerHolder .bottomLayer .copyright {
+    margin: 0;
+    width: 70%;
+    order: -1;
+  }
 }
 footer .footerHolder .bottomLayer .copyright span,
 footer .footerHolder .bottomLayer .copyright i {
@@ -955,7 +994,16 @@ footer .footerHolder .bottomLayer .copyright i {
 footer .footerHolder .bottomLayer .copyright span {
   border-bottom: 1px solid white;
 }
+footer .footerHolder .bottomLayer .footer-social {
+  margin: 20px 0 20px 40px;
+}
+@media (min-width: 1024px) {
+  footer .footerHolder .bottomLayer .footer-social {
+    margin: 0;
+  }
+}
 footer .footerHolder .bottomLayer .footer-social a i {
+  margin-left: 4px;
   font-size: 2em;
   color: #FFF;
 }
