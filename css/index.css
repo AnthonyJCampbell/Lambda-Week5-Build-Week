@@ -342,7 +342,7 @@ h6 {
   /* Disable horizontal scroll */
   padding-top: 60px;
   /* Place content 60px from the top */
-  padding-bottom: 100%;
+  padding-bottom: 30%;
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidenav */
   z-index: 998;
@@ -872,7 +872,7 @@ footer .footerHolder {
   padding: 40px 0;
   margin: 0 auto;
   width: 100%;
-  max-width: 1024px;
+  max-width: 924px;
 }
 footer .footerHolder .upperLayer {
   display: flex;
@@ -911,11 +911,6 @@ footer .footerHolder .upperLayer .newsletter {
   max-width: 500px;
   margin: 0 0 0 40px;
 }
-@media (min-width: 1024px) {
-  footer .footerHolder .upperLayer .newsletter {
-    margin: 0px;
-  }
-}
 footer .footerHolder .upperLayer .newsletter h6 {
   font-size: 1.6em;
   font-weight: 700;
@@ -942,11 +937,7 @@ footer .footerHolder .upperLayer .newsletter input {
   -webkit-rtl-ordering: logical;
   cursor: text;
   padding: 1px;
-}
-@media (min-width: 1024px) {
-  footer .footerHolder .upperLayer .newsletter input {
-    padding-left: 20px !important;
-  }
+  padding-left: 20px !important;
 }
 footer .footerHolder .upperLayer .newsletter button {
   margin-top: 20px;
