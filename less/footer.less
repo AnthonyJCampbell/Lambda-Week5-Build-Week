@@ -1,23 +1,147 @@
 footer {
     background: #222222;
     color: white;
-    .productLinks {
-        ul {
-            li {
-                a {
-                    text-decoration: none;
+    width: 100%;
+    .footerHolder {
+        padding: 40px 0;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1024px;
+        .upperLayer{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+            .productLinks {
+                @media (max-width: 1024px) {
+                    margin: 0 0 25px 40px;
+                }
+                margin: 0 0 25px;
+                h6 {
+                    font-size: 1.6em;
+                    font-weight: 700;
                     color: white;
+                    margin-bottom: 24px;
+                }
+                ul {
+                    li {
+                        margin: 8px 0;
+                        a {
+                            font-size: 1.2em;
+                            font-weight: 700;
+                            text-decoration: none;
+                            color: white;
+                            &:hover {
+                                border-bottom: 3px solid #df003a;
+                            }
+                        }
+                        
+                    }
+                }
+            }            
+            .newsletter {
+                width: 100%;
+                max-width: 500px;
+                margin: 0 0 0 40px;
+                @media (min-width: 1024px) {
+                    margin: 0px;
+                }
+                h6 {
+                    font-size: 1.6em;
+                    font-weight: 700;
+                    color: white;
+                    margin-bottom: 24px;
+                }
+                p {
+                    margin-bottom: 1em;
+                    font-family: 'Roboto',sans-serif;
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: #fff
+                }
+                input {
+                    line-height: 38px;
+                    border: none;
+                    background: #fff;
+                    font-weight: 500;
+                    border-radius: 20px;
+                    color: #777;
+                    width: 80%;
+                    max-width: 300px;
+                    overflow: hidden;
+                    -webkit-rtl-ordering: logical;
+                    cursor: text;
+                    padding: 1px;
+                    @media (min-width: 1024px) {
+                        padding-left: 20px !important;
+                    }
+                }
+                button {
+                    margin-top: 20px;
+                    margin-left: 10px;
+                    background-color: #df003a;
+                    text-align: center;
+                    line-height: 42px!important;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    border-radius: 25px;
+                    border: none;
+                    color: #fff;
+                    display: inline-block;
+                    font-weight: 500;
+                    font: 400 11px system-ui;
+                    cursor: pointer;
+                    transition: all .3s ease 0s;
+                    display: flex;
+                    justify-content: center;
+                    border: 2px solid #222;
+                    &:hover {
+                        transform: scale(1.05);
+                        opacity: .8;
+                        border: 2px solid white;
+                    }
+                    span {
+                        font-size: 1.6em;
+                    }
                 }
             }
         }
-    }
-    .footer-social {
-        a {
-            color: white;
-            background-color: white;
-            i {
-                color: #111;
-
+        .bottomLayer {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .copyright {
+                order: 2;
+                margin: 0 0 0 40px;
+                width: 100%;
+                @media (min-width: 1024px) {
+                    margin: 0;
+                    width: 70%;
+                    order: -1;
+                }
+                span, i {
+                    color: #df003a;
+                }
+                span {
+                    border-bottom: 1px solid white;
+                }
+            }
+            .footer-social {
+                margin: 20px 0 20px 40px; 
+                @media (min-width: 1024px) {
+                    margin: 0;
+                }
+                a {
+                    
+                    i {
+                        margin-left: 4px;
+                        font-size: 2em;
+                        color: #FFF;
+                        &:hover {
+                            color: #df003a;
+                        }
+                    }
+                }
             }
         }
     }
