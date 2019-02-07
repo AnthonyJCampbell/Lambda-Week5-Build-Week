@@ -18,7 +18,11 @@ function closeNav() {
 // When the sidenav is open && clicking outside of the sidenav, close it.
 document.addEventListener('click', ((e) => {
     let a = e.target;
-    if (a != mySidenav && a != document.querySelector('.closebtn') && a != document.querySelector('#open') && a != document.querySelector('#close')) {
+    if (a != mySidenav &&
+        a != document.querySelector('.closebtn') && 
+        a != document.querySelector('#open') &&
+        a != document.querySelector('#close') &&
+        mySidenav.style.width > "1px") {
         console.log('it happened')
         closeNav();
     }
