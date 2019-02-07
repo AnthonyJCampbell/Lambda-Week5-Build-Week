@@ -938,6 +938,10 @@ footer .footerHolder .upperLayer .newsletter input {
   cursor: text;
   padding: 1px;
   padding-left: 20px !important;
+  transition: 0.8s;
+}
+footer .footerHolder .upperLayer .newsletter input:focus {
+  border-radius: 0px;
 }
 footer .footerHolder .upperLayer .newsletter button {
   margin-top: 20px;
