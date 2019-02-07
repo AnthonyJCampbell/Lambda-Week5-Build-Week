@@ -1,18 +1,31 @@
+const mySidenav = document.getElementById("mySidenav")
+const open = document.querySelector('#open')
 /* Set the width of the side navigation to 250px */
 function openNav() {
-    document.getElementById("mySidenav").style.width = "350px";
-    document.querySelector('#open').style.display = 'none';
+    mySidenav.style.width = "350px";
+    open.style.display = 'none';
     document.querySelector('#close').style.display = 'block';
     
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.querySelector('#open').style.display = 'block';
+    mySidenav.style.width = "0";
+    open.style.display = 'block';
     document.querySelector('#close').style.display = 'none';
 }
 
+// When the sidenav is open && clicking outside of the sidenav, close it.
+document.addEventListener('click', ((e) => {
+    let a = e.target;
+    if (a != mySidenav &&
+        a != document.querySelector('.closebtn') && 
+        a != document.querySelector('#open') &&
+        a != document.querySelector('#close') &&
+        mySidenav.style.width > "1px") {
+        closeNav();
+    }
+}))
 
 
 const sidenavButtons = document.querySelectorAll('.sidenavButton')
@@ -53,14 +66,14 @@ window.addEventListener('resize', (() => {
     }  
     // GENERAL CASE: MENU CLOSED AND WINDOW RESIZED
     if (window.innerWidth >= 1024) {
-        document.querySelector('#open').style.display = 'none';
+        open.style.display = 'none';
         document.querySelector('#close').style.display = 'none';
     }
     // EDGE CASE: MENU IS OPEN, BUT WINDOW IS RESIZED
     if (document.querySelector("#mySidenav").style.width > "1px" && window.innerWidth >= 1024) {
         document.querySelector("#mySidenav").style.width = "0px";
         document.querySelector('#close').style.display = 'none';
-        document.querySelector('#open').style.display = 'none';
+        open.style.display = 'none';
     }
 }))
 

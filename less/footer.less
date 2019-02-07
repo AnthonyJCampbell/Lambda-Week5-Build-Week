@@ -6,7 +6,7 @@ footer {
         padding: 40px 0;
         margin: 0 auto;
         width: 100%;
-        max-width: 1024px;
+        max-width: 924px;
         .upperLayer{
             display: flex;
             justify-content: space-between;
@@ -43,9 +43,9 @@ footer {
                 width: 100%;
                 max-width: 500px;
                 margin: 0 0 0 40px;
-                @media (min-width: 1024px) {
-                    margin: 0px;
-                }
+                // @media (min-width: 1024px) {
+                //     margin: 0px;
+                // }
                 h6 {
                     font-size: 1.6em;
                     font-weight: 700;
@@ -72,8 +72,10 @@ footer {
                     -webkit-rtl-ordering: logical;
                     cursor: text;
                     padding: 1px;
-                    @media (min-width: 1024px) {
-                        padding-left: 20px !important;
+                    padding-left: 20px !important;
+                    transition: 0.8s;
+                    &:focus {
+                        border-radius: 0px;
                     }
                 }
                 button {
