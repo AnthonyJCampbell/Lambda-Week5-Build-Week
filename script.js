@@ -23,7 +23,6 @@ document.addEventListener('click', ((e) => {
         a != document.querySelector('#open') &&
         a != document.querySelector('#close') &&
         mySidenav.style.width > "1px") {
-        console.log('it happened')
         closeNav();
     }
 }))
