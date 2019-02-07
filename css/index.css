@@ -809,6 +809,12 @@ section.blog .blogpost {
   margin: 25px auto;
   width: 90%;
 }
+@media (min-width: 679px) {
+  section.blog .blogpost {
+    width: 60%;
+    margin: 25px 35px;
+  }
+}
 @media (min-width: 1024px) {
   section.blog .blogpost {
     width: 45%;
