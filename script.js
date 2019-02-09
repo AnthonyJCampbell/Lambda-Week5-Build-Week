@@ -61,7 +61,7 @@ for (let item of navItems) {
 
 window.addEventListener('resize', (() => {
     // CASE: WINDOW IS LESS THAN 1024PX, WHICH MEANS THE OPEN-BUTTON OUGHT TO BE VISIBLE
-    if (window.innerWidth < 1024) {
+    if (window.innerWidth < 1024 && mySidenav.style.width < "1px" ) {
         document.querySelector('#open').style.display = 'block';
     }  
     // GENERAL CASE: MENU CLOSED AND WINDOW RESIZED
